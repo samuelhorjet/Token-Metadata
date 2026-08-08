@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = ["program"]
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+opt-level = 3
+panic = "abort"
